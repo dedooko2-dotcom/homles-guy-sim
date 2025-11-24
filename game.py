@@ -31,7 +31,7 @@ class HomelessGuy:
         items = ", ".join(self.inventory) if self.inventory else "Nothing"
         return f"""
 ╔══════════════════════════════════════════╗
-║          DAY {self.day} - STATUS                 
+║          DAY {self.day} - STATUS             ║
 ╠══════════════════════════════════════════╣
 ║  Health:  {self.health:3d}/100  {'█' * (self.health // 10)}{'░' * (10 - self.health // 10)}
 ║  Hunger:  {self.hunger:3d}/100  {'█' * (self.hunger // 10)}{'░' * (10 - self.hunger // 10)}
